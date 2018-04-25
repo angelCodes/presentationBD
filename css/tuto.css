@@ -1,0 +1,299 @@
+* {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      list-style: none;
+}
+
+/*    Customize ScrollBar   */
+::-webkit-scrollbar{
+        width: 8px;
+
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: #40007d;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+
+body {
+      width: 100%;
+      height: 100vh;
+      background-image: url("../files/images/13.jpeg") 100% 100%;
+
+      background-size: cover;
+    /*  background-attachment: scroll;
+    /*  display: table;*/
+}
+
+
+
+nav {
+      width: 100%;
+      background: #000;
+      height: 70px;
+      position: static;
+      z-index: 1;
+}
+
+nav #brand {
+      float: left;
+      display: block;
+      margin-left: 84px;
+      font-size: 30px;
+      line-height: 70px;
+      font-weight: bold;
+}
+
+nav #brand a {
+      color: #fff;
+      transition: all 0.3s ease-out;
+      font-family: "Poppins";
+      font-weight: 300;
+}
+
+nav #menu {
+      float: left;
+      left: 28%;
+      position: relative;
+}
+
+nav #menu li {
+      display: inline-block;
+      padding: 0px 30px;
+      cursor: pointer;
+      line-height: 70px;
+      position: relative;
+      transition: all 0.3s ease-out;
+}
+
+nav #menu li a {
+      color: #fff;
+      font-family: "Poppins";
+      font-weight: 200;
+}
+
+#toggle {
+      position: absolute;
+      right: 20px;
+      top: 14px;
+      z-index: 999;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      float: right;
+      transition: all 0.3s ease-out;
+      visibility: hidden;
+      opacity: 0;
+}
+
+#toggle .span {
+      height: 3px;
+      background: #fff;
+      transition: all 0.3s ease-out;
+      backface-visibility: hidden;
+      margin: 5px auto;
+}
+
+#toggle.on #one {
+      transform: rotate(45deg) translateX(2px) translateY(4px);
+}
+
+#toggle.on #two {
+      opacity: 0;
+}
+
+#toggle.on #three {
+      transform: rotate(-45deg) translateX(8px) translateY(-10px);
+}
+
+#resize {
+      z-index: 1;
+      top: 0px;
+      position: absolute;
+      background: #40007d;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 1s ease-out;
+      display: table;
+}
+
+#resize #menu {
+      height: 90px;
+      display: table-cell;
+      vertical-align: center;
+}
+
+#resize #menu li {
+      display: block;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 50px;
+      min-height: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+}
+
+#resize li:nth-child(1) {
+      margin-top:140px;
+}
+
+#resize #menu li a {
+  background-color: #fff;
+  color: #40007d;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+#resize.active {
+      visibility: visible;
+      opacity: 0.99;
+}
+
+
+
+
+/* Content Box */
+.content {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      padding-top: 8%;
+      /*top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);*/
+}
+
+/*.content h1 {
+      color: #fff;
+      font-family: "Poppins";
+      font-weight: 200;
+      font-size: 40px;
+}*/
+.textbox > .fa{
+    border-style: none;
+    background-color: transparent;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.box{
+    border-style: none;
+    height: 200px;
+    text-align: center;
+    padding-top: 10%;
+    margin-right: 25px;
+    /*line-height: 250px;*/
+    opacity: 0.8;
+    margin-top: 50px;
+    display: inline-block;
+    width: 23%;
+    margin-bottom: 50px;
+}
+
+.box:hover{
+    opacity: 1;
+}
+
+
+
+#box2{
+    background-color: #835aeb;
+}
+
+#box3{
+    background-color: #10c6fc;
+}
+
+#box4{
+    background-color: #ff2b4a;
+}
+
+
+.textBox i{
+    font-size:40px;
+    color: #fff;
+    background-color: transparent;
+}
+
+.textBox h6 a{
+    font-size: 28px;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+/* Video Youtube Inside the page */
+.video{
+    position: relative;
+    padding-bottom: 56.25%;
+    background: #40007d;
+
+}
+.video iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.vid-container{
+  max-width: 500px;
+}
+
+
+@media(max-width: 768px) {
+      #toggle {
+            visibility: visible;
+            opacity: 0.8;
+            margin-top: 6px;
+      }
+
+      nav #brand {
+            margin-left: 18px;
+      }
+
+      #menu a {
+            font-family: "Poppins";
+            font-weight: 200;
+            font-size: 20px;
+      }
+
+      nav #menu {
+            display: none;
+      }
+      .content{
+        text-align: center;
+      }
+      .box{
+       width: 80%;
+       height: 200px;
+        display: block;
+        padding-top: 30%;
+        margin-left: 10%;
+
+      }
+      .textBox i{
+          font-size:40px;
+      }
+
+      .textBox h6 a{
+          font-size: 20px;
+      }
+}
+
+@media(min-width: 768px) {
+      #resize {
+            visibility: hidden !important;
+      }
+}

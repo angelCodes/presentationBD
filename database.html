@@ -1,0 +1,614 @@
+<!Doctype HTML>
+<html>
+
+<head>
+	<title>Base de Donnée || Analyse et Conception</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/ir-black.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+</head>
+<style media="screen">
+body{
+	background-color: #132235;
+}
+fieldset{
+	border-color: #fff;
+
+}
+
+
+legend{
+	background-color: #fff;
+	color: #132235;
+  padding: 10px;
+  font-weight: bold;
+	font-size: 20px;
+}
+
+.navbar{
+  background-color: #40007d;
+}
+  .fa{
+    color: #40007d;
+    margin-right: 10px;
+  }
+
+  .nav{
+    border-right: 1px solid #d3d4de;
+    padding-right: 50px;
+  }
+
+  .nav-link{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d3d4de;
+    color: #fff;
+    text-align: center;
+  }
+
+
+  .card-header{
+    color: #fff;
+    text-transform: uppercase;
+  }
+	code{
+		overflow: scroll;
+	}
+
+.background-wrap{
+    position: fixed;
+    z-index: -1000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+#video-bg-elem{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1000;
+    opacity: 0.8;
+}
+.submit{
+    width: 500px;
+    height: 45px;
+    margin-left: 430px;
+    display: block;
+    border-radius: 5px;
+    margin-top: 150px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+#contents{
+  display: none;
+}
+
+</style>
+<body>
+    <div class="background-wrap">
+            <video id="video-bg-elem" preload="auto" autoplay="true" muted="muted" loop="true">
+                <source src="files/7.mp4" type="video/mp4">
+                Video Not Supported
+            </video>
+        </div>
+
+         
+        <div class="content" >
+
+  <fieldset id="contents" >
+    <legend class="text-center animated fadeInUp">DJIBRIL SOW</legend>
+<br>
+<div class="row">
+
+
+<div class="nav flex-column nav-pills col-md-4  col-md-offset-1 ml-auto fixed animated rotateInDownLeft" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+  <a class="nav-link active bg-dark" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Notion de base données</a>
+  <a class="nav-link bg-dark" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Conception et analyse d’une base de données</a>
+
+  <a class="nav-link bg-dark" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Le langage de programmation SQL: définition, utilité et domaine d'application</a>
+  <a class="nav-link bg-dark" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">SGBD: définition et quelques exemples</a>
+  <a class="nav-link bg-dark" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab" aria-controls="v-pills-5" aria-selected="false">MySQL: définition</a>
+    <a class="nav-link bg-dark" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-6" role="tab" aria-controls="v-pills-6" aria-selected="false">Script de création de la base de données</a>
+</div>
+<div class="tab-content col-md-7  " id="v-pills-tabContent">
+  <!--    installation   -->
+
+  <div class="tab-pane fade show active animated rotateInDownRight" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+      <div class="container-fluid">
+      <div class="col-md-10 scrollspy  col-md-offset-1">
+        <div class="card border-dark">
+          <div class="card-header bg-dark">
+            Notion de Base de Donnée
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Définition</h5>
+            <p class="card-text" style="color: #000;">
+            Une base de données est une collection de données organisées de façon à être facilement accessibles, administrées et mises à jour.
+          </p>
+          <pre>
+         </div>
+      </div>
+    </div>
+      </div>
+  </div>
+
+
+
+  <!--    configuration   -->
+  <div class="tab-pane fade animated rotateInDownRight" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+
+    <div class="container-fluid">
+      <div class="col-md-10 scrollspy  col-md-offset-1">
+        <div class="card border-dark">
+          <div class="card-header bg-dark">
+            Analyse et Conception
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Analyse</h5>
+            <p class="card-text" style="color: #000;">
+              Elle consiste à étudier le problème et à consigner dans un document les besoins, les choix, les contraintes entre autres.
+           </p>
+
+          </div>
+
+        </div>
+      </div>
+      <hr>
+
+      <div class="col-md-10 scrollspy  col-md-offset-1">
+        <div class="card border-dark">
+          <div class="card-header bg-dark">
+            Analyse et Conception
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Conception</h5>
+            <p class="card-text" style="color: #000;">
+            Elle permet de représenter les éléments collectés à la phase d'analyse, de façon graphique, en se basant sur des moéles (Mérise ) ou diagrammes (UML).
+
+           </p>
+
+          </div>
+
+        </div>
+      </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+  <!--    model   -->
+  <div class="tab-pane fade animated rotateInDownRight" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+
+    <div class="container-fluid">
+      <div class="col-md-10 scrollspy  col-md-offset-1">
+        <div class="card border-dark">
+          <div class="card-header bg-dark">
+              Langage de programmation SQL
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">SQL (Structured Query Language)</h5>
+            <p class="card-text" style="color: #000;">
+							<blockquote>
+								<p>
+                  Langage permettant de communiquer avec une base de données. Ce langage informatique est notamment très utilisé par les développeurs web pour communiquer avec les données d’un site web.
+                </p>
+							</blockquote>
+        	  </p>
+          </div>
+        </div>
+      </div>
+  	</div>
+	</div>
+
+
+  <!--    view   -->
+
+  <div class="tab-pane fade animated rotateInDownRight" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+
+    <div class="container-fluid">
+      <div class="col-md-10 scrollspy  col-md-offset-1">
+        <div class="card border-dark">
+          <div class="card-header bg-dark">
+              SGBD: définition et  exemples
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Définition</h5>
+            <p class="card-text" style="color: #000;">
+							<blockquote>
+								<p>
+                Un SGBD est un logiciel qui permet de structurer, de stoquer, de mettre à jour et de faire la maintenance d'une base de données.
+                </p>
+							</blockquote>
+        	  </p>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <div class="col-md-10 scrollspy  col-md-offset-1">
+        <div class="card border-dark">
+          <div class="card-header bg-dark">
+              SGBD: définition et quelques exemples
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Exemples</h5>
+            <p class="card-text" style="color: #000;">
+              <blockquote>
+                <ul class="list-group">
+                  <li class="list-group-item">Oracle </li>
+                  <li class="list-group-item">MySQL </li>
+                  <li class="list-group-item">Postgres</li>
+                  <li class="list-group-item">SQLite </li>
+                  <li class="list-group-item">etc...</li>
+                </ul>
+              </blockquote>
+            </p>
+          </div>
+        </div>
+      </div>
+  	</div>
+	</div>
+
+
+
+
+
+
+  <!--    controller   -->
+ <div class="tab-pane fade animated rotateInDownRight" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
+
+	 <br>
+	 <div class="container-fluid">
+		 <div class="col-md-10 scrollspy  col-md-offset-1">
+			 <div class="card border-dark">
+				 <div class="card-header bg-dark">
+					MYSQL
+				 </div>
+				 <div class="card-body">
+					 <h5 class="card-title">Définition</h5>
+					 <p class="card-text" style="color: #000;">
+					 <blockquote >
+					  <p>MySQL est la base de données open source la plus plébiscitée au monde. De par sa performance, sa fiabilité et sa facilité d’utilisation éprouvées, MySQL s’est imposée comme le choix évident de base de données pour les applications Web, utilisée par les plus grands noms d’Internet, comme Facebook, Twitter, YouTube et les cinq premiers sites Internet*.</p>
+					 </blockquote>
+				 </p>
+				 <pre>
+
+			 <hr>
+				 </div>
+
+			 </div>
+		 </div>
+ </div>
+</div>
+<!--    installation   -->
+
+<div class="tab-pane fade show animated rotateInDownRight" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab">
+
+  <br>
+
+  <div class="container-fluid">
+    <div class="col-md-10 scrollspy  col-md-offset-1">
+     <div class="card border-dark">
+       <div class="card-header bg-dark" data-toggle="collapse" href="#1" role="button" aria-expanded="false" aria-controls="1" >
+
+             CREATE USER
+
+       </div>
+       <div class="card-body collapse" id="1">
+         <h5 class="card-title">Créer Utilisateur et lui donner tous les privilèges</h5>
+         <pre>
+<code class="mysql">
+mysql> CREATE USER 'test' IDENTIFIED BY 'mypassword';
+Query OK, 0 rows affected (0.19 sec)
+mysql> GRANT ALL PRIVILEGES ON * . * TO 'test';
+Query OK, 0 rows affected (0.02 sec)
+
+ </code>
+         </pre>
+
+       </div>
+
+     </div>
+
+          <hr>
+          <div class="card border-dark">
+            <div class="card-header bg-dark" data-toggle="collapse" href="#2" role="button" aria-expanded="false" aria-controls="2">
+             CREATE DATABASE
+            </div>
+            <div class="card-body" id="2" class="collapse">
+              <h5 class="card-title">Créer Base de donnée</h5>
+              <pre>
+     <code class="mysql">
+mysql> create database testdb;
+Query OK, 1 row affected (0.02 sec)
+mysql> create database testdb;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| GestForage         |
+| blog               |
+| mediaTech          |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| samane_test        |
+| simple_login       |
+| sound_around       |
+| sys                |
+| testLaravel        |
+| testdb             |
+| user               |
+| videoManager       |
+| wordpress          |
++--------------------+
+16 rows in set (0.04 sec)
+
+mysql> use testdb;
+Database changed
+
+      </code>
+              </pre>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="card border-dark">
+            <div class="card-header bg-dark" data-toggle="collapse" href="#3" role="button" aria-expanded="false" aria-controls="3">
+            CREATE TABLE
+            </div>
+            <div class="card-body" id="3" class="collapse">
+              <h5 class="card-title">Créer Table</h5>
+              <pre>
+     <code class="mysql">
+mysql> CREATE TABLE `user` (
+   ->   `user_id` int(11) NOT NULL,
+   ->   `email` varchar(255) NOT NULL,
+   ->   `password` varchar(255) DEFAULT NULL,
+   ->   `name` varchar(50) DEFAULT NULL,
+   ->   `role` varchar(25) NOT NULL,
+   ->   `status` tinyint(1) DEFAULT '1',
+   ->   `created_at` datetime DEFAULT NULL,
+   ->   `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+   -> ) ENGINE=InnoDB AVG_ROW_LENGTH=8192 DEFAULT CHARSET=utf8;
+Query OK, 0 rows affected (0.44 sec)
+
+
+      </code>
+              </pre>
+
+              <pre>
+     <code class="mysql">
+mysql> CREATE TABLE `user` (
+   ->   `user_id` int(11) NOT NULL,
+   ->   `email` varchar(255) NOT NULL,
+   ->   `password` varchar(255) DEFAULT NULL,
+   ->   `name` varchar(50) DEFAULT NULL,
+   ->   `role` varchar(25) NOT NULL,
+   ->   `status` tinyint(1) DEFAULT '1',
+   ->   `created_at` datetime DEFAULT NULL,
+   ->   `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+   -> ) ENGINE=InnoDB AVG_ROW_LENGTH=8192 DEFAULT CHARSET=utf8;
+Query OK, 0 rows affected (0.44 sec)
+
+
+mysql> desc user;
+
++------------+--------------+------+-----+---------+-----------------------------+
+| Field      | Type         | Null | Key | Default | Extra                       |
++------------+--------------+------+-----+---------+-----------------------------+
+| user_id    | int(11)      | NO   |     | NULL    |                             |
+| email      | varchar(255) | NO   |     | NULL    |                             |
+| password   | varchar(255) | YES  |     | NULL    |                             |
+| name       | varchar(50)  | YES  |     | NULL    |                             |
+| role       | varchar(25)  | NO   |     | NULL    |                             |
+| status     | tinyint(1)   | YES  |     | 1       |                             |
+| created_at | datetime     | YES  |     | NULL    |                             |
+| updated_at | timestamp    | YES  |     | NULL    | on update CURRENT_TIMESTAMP |
++------------+--------------+------+-----+---------+-----------------------------+
+8 rows in set (0.00 sec)
+
+mysql> CREATE TABLE `profil` (
+    ->   `idProfil` int(11) NOT NULL,
+    ->   `libProfil` varchar(30) NOT NULL
+    -> ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+Query OK, 0 rows affected (0.42 sec)
+
+
+
+      </code>
+              </pre>
+
+
+
+
+            </div>
+
+          </div>
+
+               <hr>
+
+               <div class="card border-dark">
+                 <div class="card-header bg-dark" data-toggle="collapse" href="#4" role="button" aria-expanded="false" aria-controls="4">
+                  ALTER
+                 </div>
+                 <div class="card-body" id="4" class="collapse">
+                   <h5 class="card-title">Modifier Table</h5>
+                   <pre>
+          <code class="mysql">
+mysql> ALTER TABLE `users`
+    ->   ADD dark KEY (`id`),
+    ->   ADD KEY `idProfil` (`idProfil`);
+Query OK, 0 rows affected (0.69 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> show tables;
++------------------+
+| Tables_in_testdb |
++------------------+
+| profil           |
+| user             |
+| users            |
++------------------+
+3 rows in set (0.01 sec)
+
+
+
+           </code>
+                   </pre>
+
+                 </div>
+
+               </div>
+
+                    <hr>
+
+                    <div class="card border-dark">
+                      <div class="card-header bg-dark" data-toggle="collapse" href="#5" role="button" aria-expanded="false" aria-controls="5">
+                       INSERT
+                      </div>
+                      <div class="card-body" id="5" class="collapse">
+                        <h5 class="card-title">Inserer dans profil et users</h5>
+                        <pre>
+               <code class="mysql">
+mysql> INSERT INTO `profil` (`idProfil`, `libProfil`) VALUES (NULL, 'Admin');
+Query OK, 1 row affected (0.05 sec)
+
+mysql> INSERT INTO `profil` (`idProfil`, `libProfil`) VALUES (NULL, 'Admin');
+Query OK, 1 row affected (0.08 sec)
+
+mysql> INSERT INTO `users` (`id`, `firstName`, `lastName`, `email`, `password`, `image`, `idProfil`) VALUES (NULL, 'Djibril', 'Sow', 'dsow@gmail.com', '123456', 'profil.jpg', '1');
+Query OK, 1 row affected (0.05 sec)
+
+                </code>
+                        </pre>
+
+                      </div>
+
+                    </div>
+
+                         <hr>
+                         <div class="card border-dark">
+                           <div class="card-header bg-dark" data-toggle="collapse" href="#6" role="button" aria-expanded="false" aria-controls="6">
+                          SELECT
+                           </div>
+                           <div class="card-body" id="6" class="collapse">
+                             <h5 class="card-title">Affichage profil et users</h5>
+                             <pre>
+                    <code class="mysql">
+
+mysql> select * from profil;
++----------+-----------+
+| idProfil | libProfil |
++----------+-----------+
+|        1 | Admin     |
+|        2 | Admin     |
++----------+-----------+
+2 rows in set (0.00 sec)
+
+mysql> select * from users;
++----+-----------+----------+----------------+----------+------------+----------+
+| id | firstName | lastName | email          | password | image      | idProfil |
++----+-----------+----------+----------------+----------+------------+----------+
+|  1 | Djibril   | Sow      | dsow@gmail.com | 123456   | profil.jpg |        1 |
+|  2 | Djibril   | Sow      | dsow@gmail.com | 123456   | profil.jpg |        1 |
++----+-----------+----------+----------------+----------+------------+----------+
+2 rows in set (0.00 sec)
+
+
+                     </code>
+                             </pre>
+
+                           </div>
+
+                         </div>
+
+                              <hr>
+
+                              <div class="card border-dark">
+                                <div class="card-header bg-dark" data-toggle="collapse" href="#7" role="button" aria-expanded="false" aria-controls="7">
+                               DELETE
+                                </div>
+                                <div class="card-body" id="7" class="collapse">
+                                  <h5 class="card-title">Supprimer element de la table</h5>
+
+
+                                  <pre>
+                         <code class="mysql">
+mysql> delete from profil where idProfil = 1;
+Query OK, 1 row affected (0.08 sec)
+
+mysql> delete from users where id = 2;
+Query OK, 0 rows affected (0.00 sec)
+
+
+
+                          </code>
+                                  </pre>
+
+                                </div>
+
+                              </div>
+
+                                   <hr>
+
+
+
+   </div>
+  </div>
+</div>
+</div>
+
+</fieldset>
+    <button id="btn" class="submit bg-dark animated fadeInUp">MA PRESENTATION</button>
+</div>
+
+
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/script.js"></script>
+<script src="js/highlight.pack.js"></script>
+<script type="text/javascript">
+  hljs.initHighlightingOnLoad();
+  $('.collapsible').collapsible();
+   $('.scrollspy').scrollSpy();
+</script>
+  <script type="text/javascript">
+            $(document).ready(function(){
+                $('#btn').click(function(){
+                    $('#contents').toggle(500);
+                    $('#btn').fadeOut(1000);
+                });
+            });
+
+</script>
+
+</body>
+</html>
